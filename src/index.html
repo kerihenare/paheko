@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paheko</title>
+    <style>
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+      }
+
+      body {
+        background-color: #fff;
+        color: #222;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      main {
+        display: grid;
+        height: 100vh;
+        place-items: center;
+      }
+
+      h1 {
+        animation:
+          typing 3s steps(15),
+          blink 0.5s step-end infinite alternate;
+        border-right: 0.08em solid #0f08;
+        font-family:
+          ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+          "Roboto Mono", "Oxygen Mono", "Ubuntu Mono", "Source Code Pro",
+          "Fira Mono", "Droid Sans Mono", "Consolas", "Courier New", monospace;
+        font-size: 10vmin;
+        font-weight: normal;
+        overflow: hidden;
+        text-rendering: geometricPrecision;
+        text-shadow: 0 1px 2px #0003;
+        white-space: nowrap;
+        width: 15ch;
+      }
+
+      ::selection {
+        background-color: #0f08;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>What is Paheko?</h1>
+    </main>
+  </body>
+</html>
